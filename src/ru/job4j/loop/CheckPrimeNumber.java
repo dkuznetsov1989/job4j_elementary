@@ -1,4 +1,3 @@
-
 package ru.job4j.loop;
 
 public class CheckPrimeNumber {
@@ -6,19 +5,20 @@ public class CheckPrimeNumber {
         boolean prime = true;
         if (number == 1) {
             prime = false;
-        }
-        if (number == 2) {
-            prime = true;
-        }
-        for (int index =1; index <=number; index ++) {
-            if ((number%index) == 1) {
+        } else {
+            if (number == 2) {
                 prime = true;
-            } else
-            if ((number%2) == 0) {
-                prime = false;
-                break;
             }
         }
+        for (int index =2; index < number; index ++) {
+        if ((number%index) == 0) {
+            prime = false;
+        } else
+        if ((number%2) == 1) {
+            prime = true;
+            break;
+        }
+    }
         return prime;
     }
 }
