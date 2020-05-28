@@ -6,14 +6,17 @@ public class CheckPrimeNumber {
         if (number == 1) {
             prime = false;
         }
+        if (number == 2) {
+            prime = false;
+        }
         for (int index =1; index <=number; index ++) {
             if ((number%index) == 1) {
                 prime = true;
             } else
-                if ((index%2) == 0) {
-                    prime = false;
-                    break;
-                }
+            if ((number%2) == 0) {
+                prime = false;
+                break;
+            }
         }
         return prime;
     }
