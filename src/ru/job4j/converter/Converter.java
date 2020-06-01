@@ -3,22 +3,18 @@ package ru.job4j.converter;
 /**
  * Конвертация
  *
- * "author Dmitry Kuznetsov (a693kn@yandex.ru)
+ * "author Dmitry Kuznetsov
+ * @since 01.06.2020
+ * @version 1
  */
 
 public class Converter {
     public static int rubleToEuro(int value) {
-        /**
-         * Convertation ruble to Euro
-         */
         int rsl = value / 70;
         return rsl;
     }
 
     public static int rubbleToDollar(int value) {
-        /**
-         * Convertation ruble to Dollars
-         */
         int rsl = value / 60;
         return rsl;
     }
