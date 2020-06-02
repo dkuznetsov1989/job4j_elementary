@@ -9,11 +9,16 @@ package ru.job4j.converter;
  */
 
 public class Converter {
+    /**
+     * Convertation ruble to Euro
+     */
     public static int rubleToEuro(int value) {
         int rsl = value / 70;
         return rsl;
     }
-
+    /**
+     * Convertation ruble to Dollars
+     */
     public static int rubbleToDollar(int value) {
         int rsl = value / 60;
         return rsl;
