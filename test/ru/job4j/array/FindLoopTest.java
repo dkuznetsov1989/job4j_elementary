@@ -63,7 +63,7 @@ public class FindLoopTest {
         int [] input = new int[] {5, 2, 10, 2, 4, 5, 1};
         int value = 1;
         int start = 3;
-        int finish = 7;
+        int finish = 6;
         int result = FindLoop.indexOf(input, value, start, finish);
         int expect = 6;
         assertThat(result, is(expect));
